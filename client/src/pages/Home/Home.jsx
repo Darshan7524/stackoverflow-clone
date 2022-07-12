@@ -1,10 +1,17 @@
 import React from 'react';
+import HomeMainbar from '../../components/HomeMainbar/HomeMainbar';
+import LeftSidebar from '../../components/LeftSidebar/LeftSidebar';
+import RightSidebar from '../../components/RightSidebar/RightSidebar';
 
 const Home = () => {
   return (
-    <div><h1>home</h1>
-    <h2>second line</h2>
-    <h3>thirdline</h3></div>
+    <div className='home-container-1'>
+      <LeftSidebar/>
+      <div className='home-container-2'>
+        <HomeMainbar/>
+        <RightSidebar/>
+      </div>
+    </div>
   )
 }
 
